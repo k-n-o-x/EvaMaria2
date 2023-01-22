@@ -37,12 +37,12 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('🧩 𝖲𝖴𝖯𝖯𝖮𝖱𝖳 🧩', url=f"https://t.me/{SUPPORT_CHAT}"),
-            InlineKeyboardButton('⚡𝖴𝗉𝖽𝖺𝗍𝖾𝗌 ⚡', url="https://t.me/GreyMatter_Bots")
+            InlineKeyboardButton('📣 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📣', url=f"https://t.me/{SUPPORT_CHAT}"),
+            InlineKeyboardButton('🥵 𝐒𝐮𝐠𝐠𝐞𝐬𝐭𝐢𝐨𝐧 😇', url="https://t.me/ALLiNOnESUGGESTIONPN")
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact 𝖲𝖴𝖯𝖯𝖮𝖱𝖳 GROUP.</b>",
+            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact 𝐀𝐝𝐦𝐢𝐧 𝐛𝐨𝐭.</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
@@ -58,8 +58,8 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton('🧩 𝖲𝖴𝖯𝖯𝖮𝖱𝖳 🧩', url=f"https://t.me/{SUPPORT_CHAT}"),
-            InlineKeyboardButton('⚡𝖴𝗉𝖽𝖺𝗍𝖾𝗌 ⚡', url="https://t.me/GreyMatter_Bots")
+            InlineKeyboardButton('📣 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📣', url=f"https://t.me/{SUPPORT_CHAT}"),
+            InlineKeyboardButton('🥵 𝐒𝐮𝐠𝐠𝐞𝐬𝐭𝐢𝐨𝐧 😇', url="https://t.me/ALLiNOnESUGGESTIONPN")
         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
@@ -84,8 +84,8 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🧩 𝖲𝖴𝖯𝖯𝖮𝖱𝖳 🧩', url=f"https://t.me/{SUPPORT_CHAT}"),
-            InlineKeyboardButton('⚡𝖴𝗉𝖽𝖺𝗍𝖾𝗌 ⚡', url="https://t.me/GreyMatter_Bots")
+            InlineKeyboardButton('📣 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📣', url=f"https://t.me/{SUPPORT_CHAT}"),
+            InlineKeyboardButton('🥵 𝐒𝐮𝐠𝐠𝐞𝐬𝐭𝐢𝐨𝐧 😇', url="https://t.me/ALLiNOnESUGGESTIONPN")
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -124,8 +124,8 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('🧩 𝖲𝖴𝖯𝖯𝖮𝖱𝖳 🧩', url=f"https://t.me/{SUPPORT_CHAT}"),
-            InlineKeyboardButton('⚡𝖴𝗉𝖽𝖺𝗍𝖾𝗌 ⚡', url="https://t.me/GreyMatter_Bots")
+            InlineKeyboardButton('📣 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📣', url=f"https://t.me/{SUPPORT_CHAT}"),
+            InlineKeyboardButton('⚡ 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ⚡', url="https://instagram.com/pikachunub?igshid=YmMyMTA2M2Y=")
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
