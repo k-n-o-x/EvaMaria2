@@ -112,8 +112,6 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 𝖳𝗈𝗍𝖺𝗅 𝖢𝗁𝖺𝗍𝗌: <code>{}</code>
 𝖴𝗌𝖾𝖽 𝖲𝗍𝗈𝗋𝖺𝗀𝖾: <code>{}</code>
 
-<b>😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @GreyMatter_Bots</b>"""
-
     LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
@@ -173,7 +171,7 @@ Message <b>: {}</b>"""
 
 ❤️‍🔥 </i>Join</i> [PiKACHUNUB](https://t.me/pikachunub)  
 
-🖥 <i>Requests</i> - ||@Search_Zone_Bot|| """
+🖥 <i>Requests</i> - ||@pikachunub|| """
 
     IMDB_TEMPLATE_TXT = """
 🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> 
