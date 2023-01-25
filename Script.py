@@ -150,9 +150,9 @@ Request Again"""
 
 
     OWNER_INFO = """
-○ ADMiN : <a href='https://t.me/Pikachunubadmin_bot'>Owner</a>
+○ ADMiN : <a href='https://t.me/Pikachunubadmin_bot'>This Person</a>
 
-○ INSTAGRAM : <a href='https://instagram.com/pikachunub?igshid=YmMyMTA2M2Y='>PiKACHUNUB</a>
+○ INSTAGRAM : <a href='https://instagram.com/pikachunub?igshid=YmMyMTA2M2Y='>Tap Here</a>
 """
 
     NORSLTS = """
