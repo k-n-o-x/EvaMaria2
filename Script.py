@@ -5,12 +5,12 @@ class script(object):
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
 
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {} 🧚‍♂️
-✯ 𝐀𝐝𝐦𝐢𝐧: <a href=https://t.me/Pikachunubadmin_bot>𝐏𝐢𝐊𝐀𝐂𝐇𝐔</a>
+    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
+✯ 𝐀𝐝𝐦𝐢𝐧: <a href=http://t.me/MalluGram_AdminBot>𝐌𝐄</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝗛𝗲𝗿𝗼𝗸𝘂
+✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝐇𝐞𝐫𝐨𝐤𝐮
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
 
     SOURCE_TXT = """<b>NOTE:</b>
@@ -18,7 +18,7 @@ class script(object):
 - 🔐 𝐍𝐨𝐭 𝐑𝐞𝐯𝐞𝐚𝐥𝐞𝐝
 
 <b>DEVS:</b>
-- <a href=https://t.me/+LMWMN8WCg9I2YTk9>SUGGESTION</a>"""#please don't change repo link give credit :)
+- <a href=https://t.me/ALLiNOnESUGGESTIONMG>SUGGESTION</a>"""#please don't change repo link give credit :)
 
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -150,8 +150,8 @@ Request Again"""
 • 𝖭𝗈 𝖯𝗋𝗈𝗆𝗈, 𝖭𝗈 𝖯𝗈𝗋𝗇, 𝖭𝗈 𝖮𝗍𝗁𝖾𝗋 𝖠𝖻𝗎𝗌𝖾𝗌"""
 
     OWNER_INFO = """
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/HeyPikachunub'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
-○ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉 : <a href='https://t.me/HeyPikachunub'>𝖳𝖺𝗉 𝖧𝖾𝗋𝖾</a>
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='http://t.me/MalluGram_AdminBot'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
+○ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉 : <a href='https://t.me/MalluxGram'>𝖳𝖺𝗉 𝖧𝖾𝗋𝖾</a>
 """
 
     NORSLTS = """
@@ -177,7 +177,7 @@ Message <b>: {}</b>"""
 🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10  
 🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres} 
 
-🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [Heypikachunub](t.me/HeyPikachunub)"""
+🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [Heypikachunub](t.me/MalluxGram)"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
