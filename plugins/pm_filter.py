@@ -529,7 +529,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         file_id=file_id,
                         caption=f_caption,
                         protect_content=True if ident == "filep" else False,
-                        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('💞 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 💞', url="https://instagram.com/malluxgram?igshid=YmMyMTA2M2Y=") ] ] ))
+                        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('💌 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 💌', url="https://instagram.com/malluxgram?igshid=YmMyMTA2M2Y=") ] ] ))
                 else:
                     await query.answer(f"𝖧𝖾𝗒 {query.from_user.first_name}, 𝐃𝐨 𝐒𝐞𝐥𝐟 🤐", show_alert=True)
                 await query.answer('𝖢𝗁𝖾𝖼𝗄 𝖯𝖬, 𝖨 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝗍 𝖿𝗂𝗅𝖾𝗌 𝗂𝗇 𝖯𝖬', show_alert=True)
@@ -1071,7 +1071,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🧬 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}"),
+            InlineKeyboardButton('🧰 𝐁𝐚𝐜𝐤𝐮𝐩', url=f"https://t.me/{SUPPORT_CHAT}"),
             InlineKeyboardButton('📍 𝖲𝗈𝗎𝗋𝖼𝖾 𝖢𝗈𝖽𝖾', callback_data='source')
         ],[
             InlineKeyboardButton('🏘 𝖧𝗈𝗆𝖾', callback_data='start'),
