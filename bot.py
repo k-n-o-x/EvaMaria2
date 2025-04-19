@@ -16,11 +16,20 @@ from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script 
-from datetime import date, datetime 
-import pytz
+from datetime import date, datetime import pytz
 from aiohttp import web
 from plugins import web_server
+from motor.motor_asyncio import AsyncIOMotorClient  # Add to top
 
+async def test_db():
+    try:
+        client = AsyncIOMotorClient(MONGO_URI)
+        await client.server_info()
+        print("✓ MongoDB connection successful")
+    except Exception as e:
+        print(f"✗ MongoDB connection failed: {e}")
+        exit(1)
+        
 class Bot(Client):
 
     def __init__(self):
