@@ -1,6 +1,4 @@
 pyrogram==2.0.106
-pymongo[srv]==3.12.1
-motor==2.5.1
+pymongo==3.12.3
+motor==2.5.1  # Critical change - version proven to work
 tgcrypto==1.2.5
-umongo==2.3.0
-python-dotenv==1.0.0
