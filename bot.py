@@ -7,31 +7,20 @@ logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("imdbpy").setLevel(logging.ERROR)
 
-from pyrogram import Client, __version__
+from pyrogram import Client, version
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
 from database.users_chats_db import db
-from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, LOG_CHANNEL, PORT
+from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, LOG_CHANNEL, PORT ,SUPPORT_CHAT_ID
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script 
-# TO THIS:
-from datetime import date, datetime
+from datetime import date, datetime 
 import pytz
 from aiohttp import web
 from plugins import web_server
-from motor.motor_asyncio import AsyncIOMotorClient  # Add to top
 
-async def test_db():
-    try:
-        client = AsyncIOMotorClient(MONGO_URI)
-        await client.server_info()
-        print("✓ MongoDB connection successful")
-    except Exception as e:
-        print(f"✗ MongoDB connection failed: {e}")
-        exit(1)
-        
 class Bot(Client):
 
     def __init__(self):
@@ -64,6 +53,7 @@ class Bot(Client):
         now = datetime.now(tz)
         time = now.strftime("%H:%M:%S %p")
         await self.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+        await self.send_message(chat_id=SUPPORT_CHAT_ID, text=script.RESTART_GC_TXT.format(today, time))
         app = web.AppRunner(await web_server())
         await app.setup()
         bind_address = "0.0.0.0"
@@ -96,7 +86,7 @@ class Bot(Client):
                 Identifier of the first message to be returned.
                 Defaults to 0.
         Returns:
-            ``Generator``: A generator yielding :obj:`~pyrogram.types.Message` objects.
+            `Generator`: A generator yielding :obj:`~pyrogram.types.Message` objects.
         Example:
             .. code-block:: python
                 for message in app.iter_messages("pyrogram", 1, 15000):
@@ -113,6 +103,5 @@ class Bot(Client):
                 current += 1
 
 
-        
 app = Bot()
 app.run()
