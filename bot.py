@@ -20,7 +20,19 @@ from datetime import date, datetime
 import pytz
 from aiohttp import web
 from plugins import web_server
+from flask import Flask
+from threading import Thread
 
+server = Flask(__name__)
+
+@server.route('/')
+def home():
+    return "Bot Alive"
+
+def run_server():
+    server.run(host='0.0.0.0', port=8080)
+
+Thread(target=run_server).start()
 class Bot(Client):
 
     def __init__(self):
