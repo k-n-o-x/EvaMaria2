@@ -4,22 +4,19 @@ import re
 import base64
 from pyrogram.file_id import FileId
 from pymongo.errors import DuplicateKeyError
-from umongo import Instance, Document, fields
-from motor.motor_asyncio import AsyncIOMotorClient
+from umongo import Document, fields
 from marshmallow.exceptions import ValidationError
-from info import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER, MAX_B_TN
+from info import COLLECTION_NAME, USE_CAPTION_FILTER, MAX_B_TN
 from utils import get_settings, save_group_settings
+from database_patch import instance  # Import the shared instance
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-
-client = AsyncIOMotorClient(DATABASE_URI)
-db = client[DATABASE_NAME]
-instance = Instance.from_db(db)
-
 @instance.register
 class Media(Document):
+    # Your existing Media class definition remains the same
+    # ...
     file_id = fields.StrField(attribute='_id')
     file_ref = fields.StrField(allow_none=True)
     file_name = fields.StrField(required=True)
