@@ -9,7 +9,7 @@ logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("imdbpy").setLevel(logging.ERROR)
 
 # Initialize database first
-from database_fix import init_db
+from database_patch import init_db
 db_instance = init_db()
 
 from pyrogram import Client, __version__
